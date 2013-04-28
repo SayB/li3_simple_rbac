@@ -77,7 +77,9 @@ SimpleRbac configurations like this:
 		// access is allowed for all prefixes and libraries for all
 		// controllers and actions for the `administrator`
 		'administrator' => array(
-			'*::*'
+			'rules' => array(
+				'*::*'
+			)
 		),
 		'default' => array(
 			'rules' => array(
