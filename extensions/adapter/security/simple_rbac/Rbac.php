@@ -30,6 +30,7 @@ class Rbac extends \lithium\core\Object {
 			'prefix' => null,
 			'library' => null
 		);
+		$params['controller'] = strtolower($params['controller']);
 		$allowed = array();
 
 		foreach ($rules as $r) {
